@@ -15,7 +15,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Build with Gradle
-        run: chmod +x gradlew && ./gradlew build
+        run: chmod +x gradlew && JAVA_OPTS="" GRADLE_OPTS="" ./gradlew build --no-daemon
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
