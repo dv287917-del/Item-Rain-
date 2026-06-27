@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "itemrain",
+  "version": "${version}",
+  "name": "ItemRain",
+  "description": "Rain any held item from the sky across the loaded world.",
+  "authors": ["ItemRain"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.itemrain.ItemRainMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
